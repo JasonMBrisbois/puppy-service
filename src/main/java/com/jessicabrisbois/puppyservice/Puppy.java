@@ -1,6 +1,6 @@
 package com.jessicabrisbois.puppyservice;
 
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,7 +10,7 @@ import javax.persistence.GenerationType;
 public class Puppy {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long id;
+    private int id;
 
     private String link;
 
